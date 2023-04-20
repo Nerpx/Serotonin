@@ -1,4 +1,4 @@
-# oceanOS
+# SerotoninOS - oceanOS Copy
 A window manager/desktop environment in your browser.
 
 © 2019 [soup](https://www.youtube.com/channel/UCK3sTrOaVuGHqsXJcWjceLw)
