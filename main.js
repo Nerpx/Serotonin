@@ -19,11 +19,15 @@ var windows = [
 
 setInterval( function() {
 	var date = new Date();
+	var hours = time.getHours();
   var minute = date.getMinutes()
-  if (time.getHours() < 10) todisplay += time.getHours();
-    else todisplay += time.getHours();
+  if (hours > 12) {
+        hours -= 12;
+    } else if (hours === 0) {
+        hours = 12;
+    }
   if (date.getMinutes() < 10) minute = "0" + date.getMinutes();
-	document.getElementById("sysbarClock").innerHTML = clockDays[date.getDay()] + " " + clockMonths[date.getMonth()] + " " + date.getDate() + " - " + " " + date.getHours() + ":" + minute;
+	document.getElementById("sysbarClock").innerHTML = clockDays[date.getDay()] + " " + clockMonths[date.getMonth()] + " " + date.getDate() + " - " + " " + hours + ":" + minute;
 }, 1000);
 
 sysbarSystem.addEventListener("click", function() {
