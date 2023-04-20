@@ -20,6 +20,8 @@ var windows = [
 setInterval( function() {
 	var date = new Date();
   var minute = date.getMinutes()
+  if (time.getHours() < 10) todisplay += time.getHours();
+    else todisplay += time.getHours();
   if (date.getMinutes() < 10) minute = "0" + date.getMinutes();
 	document.getElementById("sysbarClock").innerHTML = clockDays[date.getDay()] + " " + clockMonths[date.getMonth()] + " " + date.getDate() + " - " + " " + date.getHours() + ":" + minute;
 }, 1000);
