@@ -19,7 +19,7 @@ var windows = [
 
 setInterval( function() {
 	var date = new Date();
-	var hours = time.getHours();
+	var hours = date.getHours();
   var minute = date.getMinutes()
   if (hours > 12) {
         hours -= 12;
