@@ -10,6 +10,7 @@ var osContextMenu = document.getElementById("osContextMenu");
 
 var windows = [
   document.getElementById("aboutWindow"),
+  document.getElementByID("krunkerWindow"),	
   document.getElementById("terminalWindow"),
   document.getElementById("uiWindow"),
   document.getElementById("settingsWindow"),
